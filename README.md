@@ -60,9 +60,12 @@ In order to allow the plugin to work correctly, and to keep code organized, the 
 
     Project Root
     │    ├bin
-    │    	This is the compiler output directory
+    │    	This is the compiler output directory, this should be added to your .gitignore file to avoid committing binary files to a repository.
     │    ├src
     │		Put your project code here
     ├java.txt
     ├classpath.txt
 
+## Included example
+There is an example project that builds using the plugin under the example folder.
+This program requires JavaFX to be installed under Windows at C:\Program Files (x86)\Java\javafx-sdk-11.0.2
