@@ -4,30 +4,41 @@ A plugin for Sublime Text 3 that allows you to easily run complicated java proje
 
 To install this plugin, simply clone the repository to a plugins directory for Sublime Text (Such as %appdata%\Sublime Text 3\Packages)
 
-#Usage:
+This plugin was created hastily in an attempt to make compiling java programs easier for my CS2 class, do not expect it to be a fully featured IDE for java, nor expect it to be bug free. It's terrible, has glitches, and a lot of problems. Sorry!
+
+## Usage:
+
 There are a few useful features of sublime-java that allow you to easily run java projects
 These features are accessed through a few files that you must create in your project root directory
 
-java.txt:
+### java.txt:
+
   Contains several different options for the build system
   Each option should be on it's own line with the following syntax:
   varaiable=text
   No spaces, no quotes, and no need to escape any special characters in the text portion, the plugin does this automatically
   All of these options, including the java.txt file itself, are optional, and can be included in any order.
   
-  Available options:
-  runClass:
-    The main program class to pass to the java command line program at runtime
-  additional-options:
-    Additional options to pass to the compiler at compile time
-  run-options:
-    Additional options to pass to the java command line program at runtime
-  module-path:
-    Modules to pass to the --module-path option at runtime.
-  add-modules:
-    Modules to pass to the --add-modules= option at runtime
+ ####  Available options:
   
-classpath.txt:
+
+    runClass:
+	    The main program class to pass to the java command line program at runtime
+ 
+    additional-options:
+        Additional options to pass to the compiler at compile time
+        
+    run-options:
+        Additional options to pass to the java command line program at runtime
+        
+    module-path:
+        Modules to pass to the --module-path option at runtime.
+        
+    add-modules:
+        Modules to pass to the --add-modules= option at runtime
+
+  
+### classpath.txt:
   Contains a list of classpaths to pass to the compiler and the command line
   Each classpath to search is on it's own line, and must be the full canonical path
   Directories /bin, /src, and /. are automatically included (Relative to the project root)
@@ -35,8 +46,23 @@ classpath.txt:
   
 
 This plugin also includes several keyboard short cuts that I found useful when creating java programs:
-  ctrl+alt+shift+n - Create a new class. Overwrites all content in the currently open file
-  alt+shift+p - Add a system.out.println() at the cursor position
-  alt+shift+m - Add a psvm statement at the cursor postion
+  
+
+    ctrl+alt+shift+n - Create a new class. Overwrites all content in the currently open file
+    alt+shift+p - Add a system.out.println() at the cursor position
+    alt+shift+m - Add a psvm statement at the cursor postion
+
   
 These shortcuts are also accessible through the right-click context menu
+
+## Required folder structure
+In order to allow the plugin to work correctly, and to keep code organized, the file structure for your project must be as follows
+
+    Project Root
+    │    ├bin
+    │    	This is the compiler output directory
+    │    ├src
+    │		Put your project code here
+    ├java.txt
+    ├classpath.txt
+
