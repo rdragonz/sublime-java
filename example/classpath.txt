@@ -1,0 +1,3 @@
+C:\Program Files (x86)\Java\javafx-sdk-11.0.2\lib\javafx.controls.jar
+C:\Program Files (x86)\Java\javafx-sdk-11.0.2\lib\javafx.base.jar
+C:\Program Files (x86)\Java\javafx-sdk-11.0.2\lib\javafx.graphics.jar
