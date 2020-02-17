@@ -59,7 +59,7 @@ class BuildJavaCommand(sublime_plugin.WindowCommand):
 
 		#Get any module-path options from java.txt file
 		if 'module-path' in javatxt:
-			self.module_path =" --module_path {}".format(javatxt['module-path'])
+			self.module_path =" --module-path {}".format(javatxt['module-path'])
 
 		else:
 			self.module_path = ""
