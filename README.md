@@ -4,7 +4,7 @@ A plugin for Sublime Text 3 that allows you to easily run complicated java proje
 
 To install this plugin, simply clone the repository to a plugins directory for Sublime Text (Such as %appdata%\Sublime Text 3\Packages)
 
-This plugin was created hastily in an attempt to make compiling java programs easier for my CS2 class, do not expect it to be a fully featured IDE for java, nor expect it to be bug free. It's terrible, has glitches, and a lot of problems. Sorry!
+This plugin was created hastily in an attempt to make compiling java programs easier for my CS2 class, do not expect it to be a fully featured IDE for java, nor expect it to be bug free. It's terrible, has glitches, and a lot of problems. It was designed specifically to fit my needs, and not to be a releasable project, but I'm releasing it anyways! Sorry!
 
 ## Usage:
 
