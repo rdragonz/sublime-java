@@ -1,0 +1,14 @@
+[
+{ 
+	"keys": ["alt+shift+m"],
+	"command": "psvm"
+},
+{ 
+	"keys": ["ctrl+alt+shift+j+n"],
+	"command": "class"
+},
+{ 
+	"keys": ["alt+shift+p"],
+	"command": "println"
+}
+]

@@ -1,0 +1,4 @@
+{
+	"target" : "build_java",
+	"cancel": {"kill": true}
+}

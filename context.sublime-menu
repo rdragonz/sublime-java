@@ -1,0 +1,22 @@
+[
+{
+	"caption": "Java", 
+	"id": "Java", 
+	"children":
+	[
+	{
+	"caption": "Create new class",
+	"command": "class"
+	},
+	{
+	"caption": "Insert PSVM",
+	"command": "psvm"
+	},
+	
+	{
+	"caption": "Insert println",
+	"command": "println"
+	}
+	]
+}
+]
