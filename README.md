@@ -44,6 +44,7 @@ These features are accessed through a few files that you must create in your pro
   Directories /bin, /src, and /. are automatically included (Relative to the project root)
   These paths do not need to be in quotes or escaped, the plugin does this automatically
   
+## Keyboard shortcuts and macros
 
 This plugin also includes several keyboard short cuts that I found useful when creating java programs:
   
