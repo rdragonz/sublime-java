@@ -46,6 +46,7 @@ These features are accessed through a few files that you must create in your pro
   Directories /bin, /src, and /. are automatically included (Relative to the project root)
   These paths do not need to be in quotes or escaped, the plugin does this automatically
   
+## Keyboard shortcuts and macros
 
 This plugin also includes several keyboard short cuts that I found useful when creating java programs:
   
@@ -62,9 +63,12 @@ In order to allow the plugin to work correctly, and to keep code organized, the 
 
     Project Root
     │    ├bin
-    │    	This is the compiler output directory
+    │    	This is the compiler output directory, this should be added to your .gitignore file to avoid committing binary files to a repository.
     │    ├src
     │		Put your project code here
     ├java.txt
     ├classpath.txt
 
+## Included example
+There is an example project that builds using the plugin under the example folder.
+This program requires JavaFX to be installed under Windows at C:\Program Files (x86)\Java\javafx-sdk-11.0.2
