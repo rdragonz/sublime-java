@@ -77,6 +77,11 @@ class BuildJavaCommand(sublime_plugin.WindowCommand):
 		else:
 			self.run_options = ""
 
+		if 'program-args' in javatxt:
+			self.program_args = " {}".format(javatxt['program-args'])
+		else:
+			self.program_args = ""
+
 		#Create the classpath
 		classpath = ""
 
@@ -118,8 +123,8 @@ class BuildJavaCommand(sublime_plugin.WindowCommand):
 			self.proc.terminate()
 			self.proc = None
 
-		command = 'echo Building... & javac -d {} --class-path {}{} {} & echo Running... & java --class-path {}{}{}{} {}'
-		command = command.format(working_dir + "..\\bin", classpath, self.additional_options, vars['file'], classpath,self.module_path, self.add_modules, self.run_options, self.runClass)
+		command = 'echo Building... & javac -d {} --class-path {}{} {} & echo Running... & java --class-path {}{}{}{} {}{}'
+		command = command.format(working_dir + "..\\bin", classpath, self.additional_options, vars['file'], classpath,self.module_path, self.add_modules, self.run_options, self.runClass, self.program_args)
 
 		self.proc = subprocess.Popen(
 			command,

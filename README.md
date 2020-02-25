@@ -36,6 +36,8 @@ These features are accessed through a few files that you must create in your pro
         
     add-modules:
         Modules to pass to the --add-modules= option at runtime
+    program-args:
+        Args to pass to the java command line program at runtime. Appended after the runClass.
 
   
 ### classpath.txt:
