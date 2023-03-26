@@ -1,10 +1,14 @@
-# sublime-java
-A plugin for Sublime Text 3 that allows you to easily run complicated java projects
+# (DEPRECATED) sublime-java
+A plugin for Sublime Text 3/4 that allows you to easily run complicated java projects
 
 
 To install this plugin, simply clone the repository to a plugins directory for Sublime Text (Such as %appdata%\Sublime Text 3\Packages)
 
 This plugin was created hastily in an attempt to make compiling java programs easier for my CS2 class, do not expect it to be a fully featured IDE for java, nor expect it to be bug free. It's terrible, has glitches, and a lot of problems. It was designed specifically to fit my needs, and not to be a releasable project, but I'm releasing it anyways! Sorry!
+
+# Deprecation notice!
+
+This repository is no longer maintained, and the code will no longer be updated! I have confirmed that the code works just fine on Sublime Text 4, but there will be no improvements coming to the code going forward! Like I mentioned previously, this project was created to fit *my* needs in a class I took in university, and I only released this project since I figured it might be useful to others. To my knowledge, it still works perfectly fine, but future bugs will not be fixed and any future pull requests or Github issues will be closed without review. Thank you!
 
 ## Usage:
 
